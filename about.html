@@ -115,6 +115,7 @@
   <section class="hero" id="home">
     <h2>كل شئ يخص سيرفرنا </h2>
     <p><strong>Server IP:</strong> pl-01.freezehost.pro:6261</p>
+    <p><strong>Port:</strong> 6261</p>
   </section>
 
   <section class="about" id="about">
@@ -138,30 +139,26 @@
   </footer>
 
   <script>
-    const serverIP = "pl-01.freezehost.pro:6261";
-
     async function fetchServerStatus() {
+      const statusElement = document.getElementById('server-status');
+
       try {
-        const response = await fetch(`https://api.mcsrvstat.us/2/${serverIP}`)
+        const response = await fetch("https://api.mcstatus.io/v2/status/java/pl-01.freezehost.pro:6261");
         const data = await response.json();
 
-        const statusDiv = document.getElementById("server-status");
-
         if (data.online) {
-          statusDiv.innerHTML = `
-            ✅ السيرفر <strong>أونلاين</strong><br>
-            👥 عدد اللاعبين: <strong>${data.players.online}</strong> / ${data.players.max}
-          `;
+          const players = data.players.online;
+          const maxPlayers = data.players.max;
+          statusElement.innerHTML = `<strong>حالة السيرفر:</strong> 🟢 شغال - عدد اللاعبين: ${players} / ${maxPlayers}`;
         } else {
-          statusDiv.innerHTML = "❌ السيرفر غير متصل حالياً.";
+          statusElement.innerHTML = `<strong>حالة السيرفر:</strong> 🔴 غير متصل`;
         }
-      } catch {
-        document.getElementById("server-status").innerText = "⚠️ تعذر الاتصال بالسيرفر.";
+      } catch (error) {
+        statusElement.innerHTML = `<strong>حالة السيرفر:</strong> ⚠️ تعذر الاتصال بالخادم`;
       }
     }
 
     fetchServerStatus();
-    setInterval(fetchServerStatus, 1000);
   </script>
 
 </body>
