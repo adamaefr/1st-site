@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | 1ST Server</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://cdn.discordapp.com/attachments/1368703717901074482/1379231187624661204/4k-minecraft-plethora-of-trees-nycjpsxqlnpplpxy.jpg?ex=683f7ca4&is=683e2b24&hm=38809cb37a80e1cf28fb9354c7b8c601c3819ec558a6d1e787c329419399f8dd&') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 30px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .nav-links a {
+      color: #00ffe1;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery-container {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      min-height: calc(100vh - 180px);
+    }
+
+    .gallery-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .images-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .images-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #00ffe1;
+      transition: transform 0.3s ease;
+    }
+
+    .images-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/1362924761730122071/1379232394875502613/32a9f5ce4b81200c19d10fbfb8013686.webp?ex=683f7dc3&is=683e2c43&hm=a01e31a5ac217bddebcf574a15a47ab833d60da16016bb2cd6e3e9b1c0a4e1f4&" alt="1ST Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ranks.html">Ranks / Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="Gallery-container">
+    <h2>صور من داخل السيرفر </h2>
+    <div class="images-grid">
+      <img src="https://cdn.discordapp.com/attachments/1360908810310385836/1362738440839368856/image.png?ex=683f78d2&is=683e2752&hm=ee60bbf0185ae58198de3ab46e25960552c5eb677bdf132299bc8e0b21512c1a&" alt="صورة 1">
+      <img src="https://cdn.discordapp.com/attachments/1360906156125585581/1378291250452496424/image.png?ex=683f5d01&is=683e0b81&hm=2997e5fa4ea52076b4d817b79221a74b74a773cefcb2453a24adf8ff83270f88&" alt="صورة 2">
+      <img src="https://cdn.discordapp.com/attachments/1360906156125585581/1361694921509310635/image.png?ex=683ef8b8&is=683da738&hm=f0f3853ae2194dc49c0308f9fc58feac6f509a51079459afe327c089b25de217&" alt="صورة 3">
+      <img src="https://cdn.discordapp.com/attachments/1360906156125585581/1360909770290368632/image.png?ex=683f693d&is=683e17bd&hm=3af6bb16d52f096c5d12f84b35d36343cad0ed9ed4ae3e76bbf128fb2ea304ad&" alt="صورة 4">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 1ST Server - جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>

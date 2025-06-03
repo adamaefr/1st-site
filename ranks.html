@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ranks / Shop | 1ST Server</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://cdn.discordapp.com/attachments/1368703717901074482/1379231187624661204/4k-minecraft-plethora-of-trees-nycjpsxqlnpplpxy.jpg?ex=683f7ca4&is=683e2b24&hm=38809cb37a80e1cf28fb9354c7b8c601c3819ec558a6d1e787c329419399f8dd&') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .nav-links a {
+      color: #00ffe1;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .item {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid #00ffe1;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item h3 {
+      margin-bottom: 10px;
+      color: #00ffe1;
+      font-size: 1.3rem;
+    }
+
+    .item p {
+      font-size: 0.95rem;
+      color: #eee;
+    }
+
+    .price {
+      margin-top: 10px;
+      color: #ff0;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        gap: 5px;
+      }
+
+      .section h2 {
+        font-size: 1.6rem;
+      }
+
+      .item p {
+        font-size: 0.9rem;
+      }
+
+      .price {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/1362924761730122071/1379232394875502613/32a9f5ce4b81200c19d10fbfb8013686.webp?ex=683f7dc3&is=683e2c43&hm=a01e31a5ac217bddebcf574a15a47ab833d60da16016bb2cd6e3e9b1c0a4e1f4&" alt="1ST Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ranks.html">Ranks / Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- قسم الرتب -->
+  <section class="section" id="ranks">
+    <h2>الرتب (Ranks)</h2>
+    <div class="items-grid">
+      <div class="item"><h3>VIP</h3><p>كل رتبه لها مميزاتها</p><div class="price">75K Money MC or 3M Credits</div></div>
+      <div class="item"><h3>Legend</h3><p>كل رتبه لها مميزاتها</p><div class="price">80k MC Money or You earn it from Giveaway</div></div>
+      <div class="item"><h3>VIP+</h3><p>كل رتبه لها مميزاتها</p><div class="price">100K MC Money or 5M Credits</div></div>
+      <div class="item"><h3>MVP</h3><p>كل رتبه لها مميزاتها</p><div class="price">150K MC Money or 8M Credit</div></div>
+      <div class="item"><h3>MVP+</h3><p>كل رتبه لها مميزاتها</p><div class="price">175k MC Money or 12M Credit</div></div>
+      <div class="item"><h3>Donator</h3><p>كل رتبه لها مميزاتها</p><div class="price">Donate credit at least one 2 Million to get his Rank</div></div>
+    </div>
+  </section>
+
+  <!-- قسم المتجر -->
+  <section class="section" id="shop">
+    <h2>المتجر (Shop)</h2>
+    <div class="items-grid">
+      <div class="item"><h3>نايت فيجن</h3><p>لمدة 24 ساعة</p><div class="price">20 EGP أو 3M Credit</div></div>
+      <div class="item"><h3>صلاحيات طيران</h3><p>لمدة 24 ساعة</p><div class="price">30 EGP أو 5M Credit</div></div>
+      <div class="item"><h3>صندوق نادر</h3><p>يحتوي على أدوات قوية</p><div class="price">50 EGP أو 7.5M Cerdit</div></div>
+      <div class="item"><h3>!!!!</h3><p>!!!!</p><div class="price">!!!!</div></div>
+      <div class="item"><h3>!!!!</h3><p>!!!!</p><div class="price">!!!!</div></div>
+      <div class="item"><h3>!!!!</h3><p>!!!!</p><div class="price">!!!!</div></div>
